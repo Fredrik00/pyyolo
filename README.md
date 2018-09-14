@@ -18,7 +18,7 @@ To use opencv with Python 3 additionally run (should also install numpy):
 pip3 install opencv-python
 
 ## Building
-1. Clone this repo and clone https://github.com/Fredrik00/darknet.git into darknet (might alter this later on)
+1. Clone this repo
 2. (optional) Set GPU=1 and CUDNN=1 in Makefile to use GPU.
 3. make
 4. rm -rf build
