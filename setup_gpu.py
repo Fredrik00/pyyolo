@@ -2,7 +2,7 @@ from distutils.core import setup, Extension
 import numpy
 
 module = Extension('pyyolo',
-	library_dirs=['.', '/usr/local/cuda/lib64', 'usr/local', '/usr/local/cuda/lib64/stubs'],
+	library_dirs=['.', '/usr/local/cuda/lib64', '/usr/local', '/usr/local/cuda/lib64/stubs'],
 	libraries=['yolo', 'cuda', 'cudart', 'cublas', 'curand', 'cudnn'],
 	include_dirs=[numpy.get_include(), './darknet/include'],
 	sources = ['module.c'],
