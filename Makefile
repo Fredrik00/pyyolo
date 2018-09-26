@@ -1,5 +1,5 @@
-GPU=0
-CUDNN=0
+GPU=1
+CUDNN=1
 DEBUG=0
 OPENCV=0
 
@@ -10,9 +10,9 @@ OPENCV=0
 # 	  -gencode arch=compute_52,code=[sm_52,compute_52]
 
 # This is what I use, uncomment if you know your arch and want to specify
-ARCH= -gencode arch=compute_61,code=compute_61 # Titan Xp
+#ARCH= -gencode arch=compute_61,code=compute_61 # Titan Xp
 # ARCH= -gencode arch=compute_61,code=compute_61 # Tegra TX2
-
+ARCH = -gencode arch=compute_60,code=[sm_60,compute_60] # Tesla P100
 VPATH=./darknet/src/:./darknet/examples
 LIB=libyolo.a
 OBJDIR=./obj/
